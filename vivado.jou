@@ -94,3 +94,4 @@ source frequency_tb.tcl
 close_sim
 launch_simulation
 source frequency_tb.tcl
+close_sim

@@ -712,3 +712,7 @@ $finish called at time : 480 ns : File "D:/BKU/HK241/Logic_Design_Project/Draft/
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'frequency_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
 launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2661.504 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  4 00:47:20 2024...
