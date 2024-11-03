@@ -29,9 +29,12 @@ module EffectLed(
     wire [3:0] freq;
     wire [11:0] ledstring1, ledstring2, ledstring3, ledstring4, ledstring5;
 
-effectMode modeNum(.button(button[1]) ,.mode(mode[3:0]));
+effectMode modeNum(.button(button[1]) ,.mode(mode[3:0]) ,.clk(clk));
+Effect_1 effect1(.clk(clk), .rst(rst), .button(button[0]) ,.ledstring(ledstring1));
+Effect_2 effect2(.clk(clk), .rst(rst), .button(button[0]) ,.ledstring(ledstring2));
 Effect_3 effect3(.clk(clk), .rst(rst), .button(button[0]) ,.ledstring(ledstring3));
-
+Effect_4 effect4(.clk(clk), .rst(rst), .button(button[0]) ,.ledstring(ledstring4));
+Effect_5 effect5(.clk(clk), .rst(rst), .button(button[0]) ,.ledstring(ledstring5));
 
 always @(posedge clk)
 begin

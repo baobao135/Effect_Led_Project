@@ -21,16 +21,22 @@
 
 
 module frequency_tb();
-    reg button, rst;
+    reg button, rst, clk;
     wire [3:0]freq;
     
-frequency uut(.button(button), .rst(rst), .freq(freq));
-
+frequency uut(.button(button), .rst(rst), .freq(freq), .clk(clk));
+initial
+begin
+    clk =0;
+    forever begin
+        #1clk=~clk;
+    end
+end
 initial
 begin
     button=0;
     rst=0;
-    #50;
+    #20;
     button=1;
     rst=0;
     #50
@@ -39,7 +45,7 @@ begin
     #50
     button=1;
     rst=0;
-    #50
+    #70
     button =0;
     rst=0;
     #50
@@ -47,7 +53,7 @@ begin
     rst=0;
     #50
     button=0;
-    #50
+    #90
     button=1;
     #50
     rst=1;

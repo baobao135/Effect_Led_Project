@@ -1,0 +1,175 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov  3 17:48:56 2024
+# Process ID: 10900
+# Current directory: D:/BKU/HK241/Logic_Design_Project/Draft
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15452 D:\BKU\HK241\Logic_Design_Project\Draft\Draft.xpr
+# Log file: D:/BKU/HK241/Logic_Design_Project/Draft/vivado.log
+# Journal file: D:/BKU/HK241/Logic_Design_Project/Draft\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BKU/HK241/Logic_Design_Project/Draft/Draft.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/baobu/Downloads/Draft' since last save.
+WARNING: [Project 1-312] File not found as 'D:/BKU/HK241/Logic_Design_Project/digilent-xdc-master/digilent-xdc-master/Arty-Z7-20-Master.xdc'; using path 'C:/Users/baobu/Downloads/digilent-xdc-master/digilent-xdc-master/Arty-Z7-20-Master.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'D:/BKU/HK241/Logic_Design_Project/digilent-xdc-master/digilent-xdc-master/Arty-Z7-20-Master.xdc'; using path 'C:/Users/baobu/Downloads/digilent-xdc-master/digilent-xdc-master/Arty-Z7-20-Master.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Nov  3 17:50:47 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Nov  3 17:51:50 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Sun Nov  3 17:52:24 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1678.906 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1678.906 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1678.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1882.000 ; gain = 231.836
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Nov  3 17:57:36 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Sun Nov  3 17:58:07 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2192.977 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2192.977 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Nov  3 18:13:53 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Sun Nov  3 18:14:27 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Nov  3 18:16:00 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Sun Nov  3 18:16:31 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2607.043 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 2607.043 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2607.043 ; gain = 102.910
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property target_constrs_file C:/Users/baobu/Downloads/digilent-xdc-master/digilent-xdc-master/Arty-Z7-20-Master.xdc [current_fileset -constrset]
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Nov  3 18:21:53 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Sun Nov  3 18:22:31 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 2622.973 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2622.973 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2622.973 ; gain = 15.930
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Nov  3 18:30:59 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Sun Nov  3 18:31:30 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Nov  3 18:32:23 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Sun Nov  3 18:32:54 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/Users/baobu/Downloads/digilent-xdc-master/digilent-xdc-master/Arty-Z7-20-Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/baobu/Downloads/digilent-xdc-master/digilent-xdc-master/Arty-Z7-20-Master.xdc
+add_files -fileset constrs_1 -norecurse D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Nov  3 18:50:59 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Sun Nov  3 18:51:50 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 2952.496 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 2952.496 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2952.496 ; gain = 16.680
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  3 18:58:07 2024...

@@ -22,7 +22,7 @@
 
 module Display7SEG(
     input [3:0] inNum,
-    output reg Num7SEG
+    output reg [0:6] Num7SEG
     );
 
 always @(*)

@@ -27,14 +27,13 @@ module timer(
     reg [31:0] count;
     wire [3:0]freq;
     
-frequency freq1(.button(button),.rst(rst),.freq(freq));
+frequency freq1(.button(button),.rst(rst),.freq(freq), .clk(clk));
 
 ////////////////////////////for test bench/////////////////////////////////////
 initial onesecond=1;
-always @(posedge clk or posedge rst or posedge button)
+always @(posedge clk)
 begin
-    if (rst==1) count<=0;
-    else if(button==1) count<=0;
+    if (rst==1 || button==1) count<=0;
     else
     begin
     count<=count+1;

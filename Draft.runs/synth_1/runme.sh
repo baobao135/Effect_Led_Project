@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/baobu/Downloads/Draft/Draft.runs/synth_1'
+HD_PWD='D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log EffectLed.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source EffectLed.tcl
+EAStep vivado -log frequency.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source frequency.tcl

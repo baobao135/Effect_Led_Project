@@ -25,7 +25,7 @@ module Effect_3(
     output reg [11:0] ledstring
     );
     wire onesecond;
-    reg [1:0]flag;
+    reg flag;
     
 timer timer3(.clk(clk), .rst(rst),.button(button),.onesecond(onesecond));
 initial flag=0;

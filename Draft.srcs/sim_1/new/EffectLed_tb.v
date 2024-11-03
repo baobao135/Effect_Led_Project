@@ -39,9 +39,18 @@ module EffectLed_tb();
     rst=0;
     switch=0;
     button[1]=0;
+    button[0]=1;
+    #10
     button[0]=0;
     #10
+    button[0]=1;
+    #10
+    button[0]=0;
+    #10
+    button[0]=1;
+    #10
     button[1]=0;
+    button[0]=0;
     #10
     button[1]=1;
     #10

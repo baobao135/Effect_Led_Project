@@ -21,15 +21,18 @@
 
 
 module effectMode(
-    input button,
+    input button, clk,
     output reg [3:0]mode
     );
     wire [0:6] Led7SEG_2;
 initial mode=1;
-always @(posedge button)
+always @(posedge clk)
 begin
-    mode<=mode+1;
-    if(mode>5) mode<=1;
+    if(button==1)
+    begin
+        mode<=mode+1;
+        if(mode>5) mode<=1;
+    end
 end    
  
 Display7SEG Display7SEG2(.inNum(mode), .Num7SEG(Led7SEG_2));

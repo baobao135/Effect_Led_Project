@@ -1,5 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../Draft.srcs/sources_1/new/Display7SEG.v" \
 "../../../../Draft.srcs/sources_1/new/frequency.v" \
 "../../../../Draft.srcs/sim_1/new/frequency_tb.v" \
 
