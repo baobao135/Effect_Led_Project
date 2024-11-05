@@ -1,7 +1,7 @@
-Running: xsim.dir/EffectLed_tb_behav/xsimk.exe -simmode gui -wdb EffectLed_tb_behav.wdb -simrunnum 0 -socket 52189
+Running: xsim.dir/EffectLed_tb_behav/xsimk.exe -simmode gui -wdb EffectLed_tb_behav.wdb -simrunnum 0 -socket 55850
 Design successfully loaded
-Design Loading Memory Usage: 7444 KB (Peak: 7444 KB)
+Design Loading Memory Usage: 6876 KB (Peak: 6876 KB)
 Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 8128 KB (Peak: 8128 KB)
+Simulation Memory Usage: 7608 KB (Peak: 7608 KB)
 Simulation CPU Usage: 0 ms

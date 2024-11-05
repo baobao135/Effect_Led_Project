@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log frequency.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source frequency.tcl
+EAStep vivado -log EffectLed.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source EffectLed.tcl

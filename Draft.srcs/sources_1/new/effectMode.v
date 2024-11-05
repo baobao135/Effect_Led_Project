@@ -21,12 +21,13 @@
 
 
 module effectMode(
-    input button, clk,
+    input button,
     output reg [3:0]mode
     );
     wire [0:6] Led7SEG_2;
+
 initial mode=1;
-always @(posedge clk)
+always @(posedge button)
 begin
     if(button==1)
     begin

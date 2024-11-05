@@ -1,6 +1,6 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 34e9bbf9c09a40f18c91e874179b9ba7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frequency_tb_behav xil_defaultlib.frequency_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 34e9bbf9c09a40f18c91e874179b9ba7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot EffectLed_tb_behav xil_defaultlib.EffectLed_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -8,7 +8,15 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.Display7SEG
+Compiling module xil_defaultlib.effectMode
 Compiling module xil_defaultlib.frequency
-Compiling module xil_defaultlib.frequency_tb
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.Effect_1
+Compiling module xil_defaultlib.Effect_2
+Compiling module xil_defaultlib.Effect_3
+Compiling module xil_defaultlib.Effect_4
+Compiling module xil_defaultlib.Effect_5
+Compiling module xil_defaultlib.EffectLed
+Compiling module xil_defaultlib.EffectLed_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot frequency_tb_behav
+Built simulation snapshot EffectLed_tb_behav

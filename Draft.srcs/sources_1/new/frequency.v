@@ -21,22 +21,19 @@
 
 
 module frequency(
-    input button, rst, clk,
+    input button, rst,
     output reg [3:0] freq
     );
     wire [0:6] Led7SEG_1;
-    
+
 initial freq=1;
-always @(posedge clk)
+always @(posedge button)
 begin
-    if(button==1)
+    if(rst==1) freq<=1;
+    else
     begin
-        if(rst==1) freq<=1;
-        else
-        begin
-            if (freq>=4  || freq<=0 ) freq<=1;
-            else freq<=freq*2;            
-        end
+        if (freq>=4  || freq<=0 ) freq<=1;
+        else freq<=freq*2;            
     end
 end
 

@@ -1,0 +1,494 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov  5 14:27:35 2024
+# Process ID: 5392
+# Current directory: D:/BKU/HK241/Logic_Design_Project/Draft
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3468 D:\BKU\HK241\Logic_Design_Project\Draft\Draft.xpr
+# Log file: D:/BKU/HK241/Logic_Design_Project/Draft/vivado.log
+# Journal file: D:/BKU/HK241/Logic_Design_Project/Draft\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BKU/HK241/Logic_Design_Project/Draft/Draft.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 708.602 ; gain = 87.016
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 14:28:55 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Tue Nov  5 14:29:28 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010iclg225-1L
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'H16' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:7]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M20' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'switch'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[0]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[1]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[2]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[3]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[4]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[5]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[6]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[7]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[8]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[9]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[10]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[11]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1067.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1228.066 ; gain = 455.383
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 14:40:05 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Nov  5 14:40:39 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Nov  5 14:41:26 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Nov  5 14:42:08 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 14:45:30 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010iclg225-1L
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M20' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'switch'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[0]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[1]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[2]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[3]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[4]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[5]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[6]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[7]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[8]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[9]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[10]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[11]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1859.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+CRITICAL WARNING: [HDL 9-806] Syntax error near "endcase". [D:/BKU/HK241/Logic_Design_Project/Draft/Draft.srcs/sources_1/new/EffectLed.v:59]
+[Tue Nov  5 14:48:13 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 14:48:40 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010iclg225-1L
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M20' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'switch'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[0]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[1]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[2]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[3]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[4]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[5]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[6]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[7]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[8]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[9]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[10]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[11]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1865.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 14:54:11 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 14:56:50 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BKU/HK241/Logic_Design_Project/Draft/Draft.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'frequency_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BKU/HK241/Logic_Design_Project/Draft/Draft.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj frequency_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BKU/HK241/Logic_Design_Project/Draft/Draft.sim/sim_1/behav/xsim'
+"xelab -wto 34e9bbf9c09a40f18c91e874179b9ba7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frequency_tb_behav xil_defaultlib.frequency_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 34e9bbf9c09a40f18c91e874179b9ba7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot frequency_tb_behav xil_defaultlib.frequency_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BKU/HK241/Logic_Design_Project/Draft/Draft.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "frequency_tb_behav -key {Behavioral:sim_1:Functional:frequency_tb} -tclbatch {frequency_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source frequency_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 480 ns : File "D:/BKU/HK241/Logic_Design_Project/Draft/Draft.srcs/sim_1/new/frequency_tb.v" Line 63
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'frequency_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1965.605 ; gain = 28.793
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 15:00:20 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010iclg225-1L
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M20' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'switch'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[0]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[1]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[2]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[3]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[4]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[5]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[6]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[7]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[8]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[9]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[10]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[11]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 15:02:56 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 15:06:01 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010iclg225-1L
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M20' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'switch'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[0]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[1]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[2]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[3]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[4]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[5]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[6]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[7]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[8]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[9]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[10]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led[11]'. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2036.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property top EffectLed [current_fileset]
+update_compile_order -fileset sources_1
+set_property top EffectLed_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1
+
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 15:08:43 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+close_design
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 15:09:09 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010iclg225-1L
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M20' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:11]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M19' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:12]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T14' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:90]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U12' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:91]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U13' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:92]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V13' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:93]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V15' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:94]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T15' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:95]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R16' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:96]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U17' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:97]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:98]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V18' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:99]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T16' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:100]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R17' is not a valid site or package pin name. [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc:101]
+Finished Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2039.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/BKU/HK241/Logic_Design_Project/Draft/Draft.srcs/sim_1/new/EffectLed_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/BKU/HK241/Logic_Design_Project/Draft/Draft.srcs/sources_1/new/effectMode.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/BKU/HK241/Logic_Design_Project/Draft/Draft.srcs/sources_1/new/EffectLed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/BKU/HK241/Logic_Design_Project/Draft/Draft.srcs/sim_1/new/EffectLed_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/BKU/HK241/Logic_Design_Project/Draft/Draft.srcs/sources_1/new/effectMode.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/BKU/HK241/Logic_Design_Project/Draft/Draft.srcs/sources_1/new/EffectLed.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property board_part digilentinc.com:arty-z7-20:part0:1.1 [current_project]
+WARNING: [Project 1-153] The current project device 'xc7z010iclg225-1l' does not match with the device on the 'DIGILENTINC.COM:ARTY-Z7-20:PART0:1.1' board part. A device change to match the device on 'DIGILENTINC.COM:ARTY-Z7-20:PART0:1.1' board part is being done. Please upgrade the IP in the project via the upgrade_ip command or by selecting Reports => Reports IP Status.
+INFO: [Project 1-152] Project part set to zynq (xc7z020clg400-1)
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+WARNING: [Project 1-591] Current part 'xc7z020clg400-1' is different from part 'xc7z010iclg225-1L' stored in the checkpoint.  Please run report_drc, report_timing and report_power.
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+Finished Parsing XDC File [D:/BKU/HK241/Logic_Design_Project/Arty-Z7-20-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2039.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2039.395 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 15:16:16 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Tue Nov  5 15:17:30 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Nov  5 15:31:20 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/runme.log
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "D:/BKU/HK241/Logic_Design_Project/Draft/Draft.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "D:/BKU/HK241/Logic_Design_Project/Draft/Draft.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  5 15:33:30 2024...

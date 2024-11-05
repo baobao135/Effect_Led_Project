@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Nov  4 00:30:42 2024
-# Process ID: 27256
+# Start of session at: Tue Nov  5 17:46:04 2024
+# Process ID: 19572
 # Current directory: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1
-# Command line: vivado.exe -log frequency.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source frequency.tcl -notrace
-# Log file: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/frequency.vdi
+# Command line: vivado.exe -log EffectLed.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source EffectLed.tcl -notrace
+# Log file: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1/EffectLed.vdi
 # Journal file: D:/BKU/HK241/Logic_Design_Project/Draft/Draft.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source frequency.tcl -notrace
+source EffectLed.tcl -notrace
