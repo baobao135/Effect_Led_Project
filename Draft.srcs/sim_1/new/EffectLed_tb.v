@@ -21,12 +21,12 @@
 
 
 module EffectLed_tb();
-    reg clk,rst, switch;
+    reg clk, rst, switch;
     reg [1:0]button;
     wire [11:0] Led;
-    wire [3:0] Led7SEG_1, Led7SEG_2;
+    wire [0:6] Led7SEG_2;
     
-    EffectLed uut(.clk(clk), .rst(rst), .switch(switch), .button(button), .Led(Led));
+    EffectLed uut(.clk(clk), .rst(rst), .switch(switch), .button(button), .Led(Led),.Led7SEG_2(Led7SEG_2));
                     
     initial begin
         clk =0;
@@ -37,28 +37,15 @@ module EffectLed_tb();
     
     initial begin
     rst=0;
-    switch=0;
-    button[1]=0;
     button[0]=0;
-    #10
     button[1]=0;
-    #10
+    #20
     button[1]=1;
-    #10
+    #30
     button[1]=0;
-    #10
-    button[1]=1;
-    #10
-    button[1]=0;
-    #500;
-    rst=0;
-    button[0]=0;
-    #200;
-    rst=0;
-    button[0]=1;
-    #200;
-    rst=0;
-    #800;
+    
+   
+    #2000
     $finish;
     end
 endmodule

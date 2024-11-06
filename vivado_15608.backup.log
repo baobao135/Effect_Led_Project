@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov  6 10:14:21 2024
+# Process ID: 15608
+# Current directory: D:/BKU/HK241/Logic_Design_Project/Draftv1.1/Effect_Led_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4492 D:\BKU\HK241\Logic_Design_Project\Draftv1.1\Effect_Led_Project\Draft.xpr
+# Log file: D:/BKU/HK241/Logic_Design_Project/Draftv1.1/Effect_Led_Project/vivado.log
+# Journal file: D:/BKU/HK241/Logic_Design_Project/Draftv1.1/Effect_Led_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BKU/HK241/Logic_Design_Project/Draftv1.1/Effect_Led_Project/Draft.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Wed Nov  6 10:14:49 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draftv1.1/Effect_Led_Project/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Wed Nov  6 10:15:23 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draftv1.1/Effect_Led_Project/Draft.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Wed Nov  6 10:16:23 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draftv1.1/Effect_Led_Project/Draft.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Wed Nov  6 10:17:23 2024] Launched synth_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draftv1.1/Effect_Led_Project/Draft.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Wed Nov  6 10:17:55 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draftv1.1/Effect_Led_Project/Draft.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 16
+[Wed Nov  6 10:19:54 2024] Launched impl_1...
+Run output will be captured here: D:/BKU/HK241/Logic_Design_Project/Draftv1.1/Effect_Led_Project/Draft.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  6 10:25:32 2024...

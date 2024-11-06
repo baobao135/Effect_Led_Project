@@ -21,22 +21,25 @@
 
 
 module frequency(
-    input button, rst,
+    input clk, button, rst,
     output reg [3:0] freq
     );
-    wire [0:6] Led7SEG_1;
     
-initial freq=1;
-always @(posedge button or posedge rst)
+initial 
+begin
+    freq=1;
+end
+always @(posedge clk or posedge rst)
 begin
     if(rst==1) freq<=1;
     else
     begin
-        freq<=freq*2;
-        if (freq>4  || freq<=0 ) freq<=1;
+        if(button==1)
+        begin
+            freq<=freq*2;
+            if (freq>=4  || freq<=0 ) freq<=1;
+        end
     end
 end
-
-Display7SEG Display7SEG1(.inNum(freq), .Num7SEG(Led7SEG_1));
 
 endmodule

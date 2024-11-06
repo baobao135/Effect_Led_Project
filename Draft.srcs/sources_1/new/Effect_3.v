@@ -21,13 +21,11 @@
 
 
 module Effect_3(
-    input clk, rst, button,
+    input onesecond,
     output reg [11:0] ledstring
     );
-    wire onesecond;
-    reg [1:0]flag;
-    
-timer timer3(.clk(clk), .rst(rst),.button(button),.onesecond(onesecond));
+    reg flag;
+
 initial flag=0;
 always @(posedge onesecond)
 begin

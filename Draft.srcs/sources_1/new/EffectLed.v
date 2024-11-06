@@ -22,36 +22,58 @@
 
 module EffectLed(
     input clk, rst, switch,
-    input [1:0] button,
-    output reg [11:0] Led
+    input [1:0]button,
+    output reg [11:0] Led,
+    output reg [3:0] Led7SEG_1,
+    output reg [3:0] Led7SEG_2
     );
-    wire [7:0]mode;
-    wire [3:0] freq;
+    wire [0:6] freqLed;
+    wire [0:6] modeLed;
+    wire [3:0]freq;
+    wire onesecond;
+    wire [3:0]mode;
     wire [11:0] ledstring1, ledstring2, ledstring3, ledstring4, ledstring5;
+    
+frequency freq1(.button(button[0]), .rst(rst), .freq(freq), .clk(clk));  
+  
+timer timer1(.clk(clk), .rst(rst),.freq(freq) ,.onesecond(onesecond));
 
-effectMode modeNum(.button(button[1]) ,.mode(mode[3:0]));
-Effect_3 effect3(.clk(clk), .rst(rst), .button(button[0]) ,.ledstring(ledstring3));
+effectMode modeNum(.button(button[1]) ,.mode(mode), .rst(rst), .clk(clk));
 
+Effect_1 effect1(.onesecond(onesecond) ,.ledstring(ledstring1));
+Effect_2 effect2(.onesecond(onesecond) ,.ledstring(ledstring2));
+Effect_3 effect3(.onesecond(onesecond) ,.ledstring(ledstring3));
+Effect_4 effect4(.onesecond(onesecond) ,.ledstring(ledstring4));
+Effect_5 effect5(.onesecond(onesecond) ,.ledstring(ledstring5));
 
-always @(posedge clk)
+initial begin
+    Led = 12'b0;
+end
+
+always @(*)
 begin
     case (mode)
     4'b0001:begin
-        Led<=ledstring1;
+        Led=ledstring1;
     end
     4'b0010:begin
-        Led<=ledstring2;
+        Led=ledstring2;
     end
     4'b0011:begin
-        Led<=ledstring3;
+        Led=ledstring3;
     end
     4'b0100:begin
-        Led<=ledstring4;
+        Led=ledstring4;
     end
     4'b0101:begin
-        Led<=ledstring5;
+        Led=ledstring5;
     end
-    default: Led<=0;
+    default: 
+        Led = 12'b0; // Gán giá tr? m?c ??nh
     endcase
+    
+    Led7SEG_1=freq;
+    Led7SEG_2=mode;
 end
+
 endmodule
