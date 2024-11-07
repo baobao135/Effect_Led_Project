@@ -40,7 +40,7 @@ timer timer1(.clk(clk), .rst(rst),.freq(freq) ,.onesecond(onesecond));
 
 effectMode modeNum(.button(button[1]) ,.mode(mode), .rst(rst), .clk(clk));
 
-Effect_1 effect1(.onesecond(onesecond) ,.ledstring(ledstring1));
+Effect_1 effect1(.onesecond(onesecond) ,.ledstring(ledstring1), .rst(rst));
 Effect_2 effect2(.onesecond(onesecond) ,.ledstring(ledstring2));
 Effect_3 effect3(.onesecond(onesecond) ,.ledstring(ledstring3));
 Effect_4 effect4(.onesecond(onesecond) ,.ledstring(ledstring4));

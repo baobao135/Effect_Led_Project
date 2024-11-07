@@ -1,6 +1,5 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../Draft.srcs/sources_1/new/Display7SEG.v" \
 "../../../../Draft.srcs/sources_1/new/EffectLed.v" \
 "../../../../Draft.srcs/sources_1/new/Effect_1.v" \
 "../../../../Draft.srcs/sources_1/new/Effect_2.v" \

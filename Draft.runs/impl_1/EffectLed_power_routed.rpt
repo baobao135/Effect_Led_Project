@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Wed Nov  6 17:26:07 2024
+| Date             : Thu Nov  7 11:42:02 2024
 | Host             : baobao running 64-bit major release  (build 9200)
 | Command          : report_power -file EffectLed_power_routed.rpt -pb EffectLed_power_summary_routed.pb -rpx EffectLed_power_routed.rpx
 | Design           : EffectLed
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 35.971 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 23.205 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 34.930                           |
+| Dynamic (W)              | 22.164                           |
 | Device Static (W)        | 1.041                            |
 | Effective TJA (C/W)      | 11.5                             |
 | Max Ambient (C)          | 0.0                              |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     1.690 |      376 |       --- |             --- |
-|   LUT as Logic |     1.600 |      184 |     53200 |            0.35 |
-|   Register     |     0.058 |      104 |    106400 |            0.10 |
-|   CARRY4       |     0.019 |        8 |     13300 |            0.06 |
-|   BUFG         |     0.012 |        2 |        32 |            6.25 |
+| Slice Logic    |     1.662 |      521 |       --- |             --- |
+|   LUT as Logic |     1.546 |      271 |     53200 |            0.51 |
+|   Register     |     0.065 |      161 |    106400 |            0.15 |
+|   CARRY4       |     0.042 |       22 |     13300 |            0.17 |
+|   BUFG         |     0.009 |        2 |        32 |            6.25 |
 |   Others       |     0.000 |       15 |       --- |             --- |
-| Signals        |     1.555 |      299 |       --- |             --- |
-| I/O            |    31.685 |       24 |       125 |           19.20 |
+| Signals        |     1.367 |      384 |       --- |             --- |
+| I/O            |    19.136 |       24 |       125 |           19.20 |
 | Static Power   |     1.041 |          |           |                 |
-| Total          |    35.971 |          |           |                 |
+| Total          |    23.205 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     3.555 |       3.256 |      0.299 |
-| Vccaux    |       1.800 |     1.261 |       1.161 |      0.100 |
-| Vcco33    |       3.300 |     8.966 |       8.965 |      0.001 |
+| Vccint    |       1.000 |     3.339 |       3.040 |      0.299 |
+| Vccaux    |       1.800 |     0.801 |       0.701 |      0.100 |
+| Vcco33    |       3.300 |     5.414 |       5.413 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -145,15 +145,15 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| EffectLed |    34.930 |
-|   effect1 |     0.308 |
-|   effect2 |     0.037 |
-|   effect3 |     0.107 |
-|   effect4 |     0.573 |
-|   effect5 |     0.621 |
-|   freq1   |     0.121 |
-|   modeNum |     0.662 |
-|   timer1  |     0.755 |
+| EffectLed |    22.164 |
+|   effect1 |     0.158 |
+|   effect2 |     0.108 |
+|   effect3 |     0.110 |
+|   effect4 |     0.671 |
+|   effect5 |     0.680 |
+|   freq1   |     0.207 |
+|   modeNum |     0.428 |
+|   timer1  |     0.602 |
 +-----------+-----------+
 
 

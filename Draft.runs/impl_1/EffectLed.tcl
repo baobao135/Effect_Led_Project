@@ -68,7 +68,7 @@ set rc [catch {
   set_param chipscope.maxJobs 4
   set_param xicom.use_bs_reader 1
   open_checkpoint EffectLed_routed.dcp
-  set_property webtalk.parent_dir D:/BKU/HK241/Logic_Design_Project/Draftv1.1/Effect_Led_Project/Draft.cache/wt [current_project]
+  set_property webtalk.parent_dir D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.cache/wt [current_project]
   catch { write_mem_info -force EffectLed.mmi }
   write_bitstream -force EffectLed.bit 
   catch {write_debug_probes -quiet -force EffectLed}

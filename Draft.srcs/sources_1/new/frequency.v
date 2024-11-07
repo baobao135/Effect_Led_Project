@@ -24,9 +24,10 @@ module frequency(
     input clk, button, rst,
     output reg [3:0] freq
     );
-    
+    reg [24:0] countBut;
 initial 
 begin
+    countBut=0;
     freq=1;
 end
 always @(posedge clk or posedge rst)
@@ -36,8 +37,13 @@ begin
     begin
         if(button==1)
         begin
-            freq<=freq*2;
-            if (freq>=4  || freq<=0 ) freq<=1;
+            countBut <= countBut+1;
+            if(countBut>=25000000)
+            begin
+                freq<=freq*2;
+                countBut<=0;
+            end
+            if (freq>4 ) freq<=1;
         end
     end
 end

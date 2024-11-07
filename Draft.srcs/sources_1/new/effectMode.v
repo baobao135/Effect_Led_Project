@@ -24,8 +24,10 @@ module effectMode(
     input clk, button, rst,
     output reg [3:0]mode
     );
+    reg [24:0] countBut;
 initial 
 begin
+    countBut=0;
     mode=1;
 end
 always @(posedge clk or posedge rst)
@@ -35,7 +37,12 @@ begin
     begin
         if(button==1)
         begin
-            mode<=mode+1;
+            countBut <= countBut+1;
+            if(countBut>=25000000)
+            begin
+                countBut <= 0;
+                mode<=mode+1;
+            end
         end
         if(mode>5) mode<=1;
     end

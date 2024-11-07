@@ -31,29 +31,27 @@ module Effect_2(
 initial 
 begin
     RoL = 0;
-    index=0;
-    ledstring=12'b0;
+    ledstring=12'b000000000001;
 end
 always @(posedge onesecond)
 begin
-    if(RoL == 0)
+    if(RoL==0)
     begin
-         index <= index + 1;
-         ledstring <= 12'b000000000001 << 1;
-         if(index == 11)
-         begin
-             RoL <=1;
-         end
-         else
-         begin
-             index <= index - 1;
-             ledstring <= 12'b100000000000 >> 1;
-             if(index == 0)
-             begin
-                 RoL <= 0;
-             end
-         end
+        ledstring <= (ledstring << 1);
+        if(ledstring==12'b0)
+        begin
+            RoL <= 1;
+            ledstring<=12'b100000000000;
+        end
+    end
+    else
+    begin
+        ledstring <= (ledstring >> 1);
+        if(ledstring==12'b0)
+        begin
+            RoL <= 0;
+            ledstring <= 12'b000000000001;
+        end
     end
 end 
 endmodule
-
