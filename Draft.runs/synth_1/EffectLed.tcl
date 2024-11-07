@@ -37,6 +37,7 @@ read_verilog -library xil_defaultlib {
   D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/Effect_3.v
   D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/Effect_4.v
   D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/Effect_5.v
+  D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/autoSwitch.v
   D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/effectMode.v
   D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/frequency.v
   D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/timer.v
