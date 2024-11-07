@@ -21,7 +21,7 @@
 
 
 module Effect_3(
-    input onesecond,
+    input onesecond, button,
     output reg [11:0] ledstring
     );
     reg flag;
@@ -29,15 +29,22 @@ module Effect_3(
 initial flag=0;
 always @(posedge onesecond)
 begin
-    if(flag==0)
+    if(button == 1)
     begin
-        ledstring<=12'b010101010101;
-        flag<=1;
+        flag=0;
     end
-    else 
+    else
     begin
-        ledstring<=12'b101010101010;
-        flag<=0;
+        if(flag==0)
+        begin
+            ledstring<=12'b010101010101;
+            flag<=1;
+        end
+        else 
+        begin
+            ledstring<=12'b101010101010;
+            flag<=0;
+        end
     end
 end
     

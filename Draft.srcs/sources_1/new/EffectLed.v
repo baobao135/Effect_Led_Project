@@ -43,11 +43,11 @@ effectMode modeNum(.button(button[1]) ,.mode(mode), .rst(rst), .clk(clk));
 
 autoSwitch(.onesecond(onesecond), .autoSwitch(autoSwitch), .rst(rst));
 
-Effect_1 effect1(.onesecond(onesecond) ,.ledstring(ledstring1), .rst(rst));
-Effect_2 effect2(.onesecond(onesecond) ,.ledstring(ledstring2));
-Effect_3 effect3(.onesecond(onesecond) ,.ledstring(ledstring3));
-Effect_4 effect4(.onesecond(onesecond) ,.ledstring(ledstring4));
-Effect_5 effect5(.onesecond(onesecond) ,.ledstring(ledstring5));
+Effect_1 effect1(.onesecond(onesecond) ,.ledstring(ledstring1), .rst(rst), .button(button[1]));
+Effect_2 effect2(.onesecond(onesecond) ,.ledstring(ledstring2), .button(button[1]));
+Effect_3 effect3(.onesecond(onesecond) ,.ledstring(ledstring3), .button(button[1]));
+Effect_4 effect4(.onesecond(onesecond) ,.ledstring(ledstring4), .button(button[1]));
+Effect_5 effect5(.onesecond(onesecond) ,.ledstring(ledstring5), .button(button[1]));
 
 initial begin
     Led = 12'b0;

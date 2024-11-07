@@ -21,7 +21,7 @@
 
 
 module Effect_1(
-    input onesecond, rst,
+    input onesecond, rst, button,
     output reg [11:0] ledstring
     );
     reg RoL; //1=left 0=right
@@ -33,7 +33,7 @@ begin
 end
 always @(posedge onesecond or posedge rst)
 begin
-    if(rst==1)
+    if(rst==1 || button ==1)
     begin
         RoL = 0;
         ledstring=12'b0;
