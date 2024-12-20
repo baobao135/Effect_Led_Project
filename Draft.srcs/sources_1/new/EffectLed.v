@@ -33,7 +33,7 @@ module EffectLed(
     wire onesecond;
     wire [3:0]mode;
     wire [3:0] autoSwitch;
-    wire [11:0] ledstring1, ledstring2, ledstring3, ledstring4, ledstring5;
+    wire [11:0] ledstring1, ledstring2, ledstring3, ledstring4, ledstring5, ledstring6;
     
 frequency freq1(.button(button[0]), .rst(rst), .freq(freq), .clk(clk));  
   
@@ -41,13 +41,14 @@ timer timer1(.clk(clk), .rst(rst),.freq(freq) ,.onesecond(onesecond));
 
 effectMode modeNum(.button(button[1]) ,.mode(mode), .rst(rst), .clk(clk));
 
-autoSwitch(.onesecond(onesecond), .autoSwitch(autoSwitch), .rst(rst));
+autoSwitch autoMode(.onesecond(onesecond), .autoSwitch(autoSwitch), .rst(rst));
 
 Effect_1 effect1(.onesecond(onesecond) ,.ledstring(ledstring1), .rst(rst), .button(button[1]));
 Effect_2 effect2(.onesecond(onesecond) ,.ledstring(ledstring2), .button(button[1]));
 Effect_3 effect3(.onesecond(onesecond) ,.ledstring(ledstring3), .button(button[1]));
 Effect_4 effect4(.onesecond(onesecond) ,.ledstring(ledstring4), .button(button[1]));
 Effect_5 effect5(.onesecond(onesecond) ,.ledstring(ledstring5), .button(button[1]));
+fade effect6(.clk(clk), .freq(freq), .rst(rst), .led(ledstring6));
 
 initial begin
     Led = 12'b0;
@@ -74,6 +75,9 @@ begin
         4'b0101:begin
             Led=ledstring5;
         end
+        4'b0110: begin
+            Led=ledstring6;
+        end
         default: 
             Led = 12'b0; // Gán giá tr? m?c ??nh
         endcase
@@ -96,6 +100,9 @@ begin
         end
         4'b0101:begin
             Led=ledstring5;
+        end
+        4'b0110: begin
+            Led=ledstring6;
         end
         default: 
             Led = 12'b0;

@@ -42,7 +42,7 @@ begin
         begin
             autoSwitch <= autoSwitch + 1;
             countSwitch <= 0;
-            if (autoSwitch >= 5)
+            if (autoSwitch >= 6)
                 autoSwitch <= 1;
         end
     end

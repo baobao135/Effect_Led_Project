@@ -44,7 +44,7 @@ begin
                 mode<=mode+1;
             end
         end
-        if(mode>5) mode<=1;
+        if(mode>6) mode<=1;
     end
 end    
 

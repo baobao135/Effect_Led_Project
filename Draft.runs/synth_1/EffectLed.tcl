@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -39,6 +37,7 @@ read_verilog -library xil_defaultlib {
   D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/Effect_5.v
   D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/autoSwitch.v
   D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/effectMode.v
+  D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/fade.v
   D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/frequency.v
   D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/timer.v
   D:/BKU/HK241/Logic_Design_Project/Draft/Effect_Led_Project/Draft.srcs/sources_1/new/EffectLed.v

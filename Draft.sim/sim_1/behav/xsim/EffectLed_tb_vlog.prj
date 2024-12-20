@@ -6,6 +6,7 @@ verilog xil_defaultlib  \
 "../../../../Draft.srcs/sources_1/new/Effect_3.v" \
 "../../../../Draft.srcs/sources_1/new/Effect_4.v" \
 "../../../../Draft.srcs/sources_1/new/Effect_5.v" \
+"../../../../Draft.srcs/sources_1/new/autoSwitch.v" \
 "../../../../Draft.srcs/sources_1/new/effectMode.v" \
 "../../../../Draft.srcs/sources_1/new/frequency.v" \
 "../../../../Draft.srcs/sources_1/new/timer.v" \
